@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">World</a>
+        <div class="toggle"></div>
+      </header>
+      <img src="bg.jpg" class="bg" />
+      <img src="bird.png" class="bird" />
+      <div class="content">
+        <h2>we can save the<br /><span>Earth</span></h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus asperiores tenetur illum corrupti voluptatum dolores
+          cum cumque quidem ducimus placeat corporis quibusdam autem esse
+          distinctio, deleniti ratione nulla. Repudiandae, accusamus?
+        </p>
+        <a href="#">join us </a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" /></a>
+        </li>
+      </ul>
+      <div class="textBlocks">
+        <div class="block">
+          <h3>Defender of earth</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            impedit quisquam dolore dolores
+          </p>
+        </div>
+        <div class="block">
+          <h3>How to save earth</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            impedit quisquam dolore dolores
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    document.addEventListener("mousemove", function (e) {
+      const bg = document.querySelector(".bg");
+      const bird = document.querySelector(".bird");
+      const content = document.querySelector(".content");
+
+      bg.style.width = 100 + e.pageX / 100 + "%";
+      bg.style.height = 100 + e.pageX / 100 + "%";
+
+      bird.style.right = 100 + e.pageX / 2 + "px";
+      content.style.left = 100 + e.pageX / 2 + "px";
+    });
+  </script>
+</html>
